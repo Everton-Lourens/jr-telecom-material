@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JR TELECOM - CAMAÇARI | Solicitação de Materiais</title>
+  <meta name="description" content="Sistema de solicitação de materiais para JR TELECOM - CAMAÇARI" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="brand">
+        <div class="logo-slot" aria-label="Espaço para logo da JR TELECOM - CAMAÇARI">
+          <div class="logo-mark">JR</div>
+          <div class="logo-copy">
+            <strong>LOGO JR TELECOM</strong>
+            <span>CAMAÇARI</span>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Sistema de solicitação de materiais</p>
+          <h1>JR TELECOM - CAMAÇARI</h1>
+          <p class="subtitle">Solicite vários materiais de uma só vez, gere o arquivo .txt automaticamente e abra o WhatsApp com a mensagem pronta.</p>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span>Ambiente estático</span>
+        <strong>Pronto para GitHub Pages</strong>
+      </div>
+    </section>
+
+    <section class="card">
+      <header class="section-header">
+        <h2>Dados da solicitação</h2>
+        <p>Preencha os dados abaixo para gerar a solicitação.</p>
+      </header>
+
+      <form id="requestForm" novalidate>
+        <div class="grid-2">
+          <div class="field">
+            <label for="technicianName">Nome do técnico <span>*</span></label>
+            <input type="text" id="technicianName" name="technicianName" placeholder="Digite o nome do técnico" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="companyName">Empresa</label>
+            <input type="text" id="companyName" value="JR TELECOM - CAMAÇARI" readonly />
+          </div>
+
+          <div class="field">
+            <label for="requestDate">Data da solicitação</label>
+            <input type="date" id="requestDate" name="requestDate" />
+          </div>
+
+          <div class="field">
+            <label for="requestTime">Hora da solicitação</label>
+            <input type="time" id="requestTime" name="requestTime" />
+          </div>
+
+          <div class="field">
+            <label for="sector">Setor / local de atendimento</label>
+            <input type="text" id="sector" name="sector" placeholder="Ex.: Rua, cliente, setor, bairro..." />
+          </div>
+
+          <div class="field">
+            <label for="internalId">Identificação complementar</label>
+            <input type="text" id="internalId" name="internalId" placeholder="Ex.: OS 0000, observação interna..." />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="observations">Observações</label>
+          <textarea id="observations" name="observations" rows="4" placeholder="Informações adicionais da solicitação..."></textarea>
+        </div>
+
+        <div class="materials-panel">
+          <div class="materials-head">
+            <div>
+              <h3>Materiais disponíveis</h3>
+              <p>Selecione um ou mais itens e ajuste a quantidade de cada um.</p>
+            </div>
+            <div class="materials-tools">
+              <input type="search" id="materialSearch" placeholder="Buscar material..." aria-label="Buscar material" />
+              <button type="button" class="ghost-btn" id="clearSelectionBtn">Limpar seleção</button>
+            </div>
+          </div>
+          <div id="materialsList" class="materials-list" aria-live="polite"></div>
+        </div>
+
+        <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+
+        <div class="actions">
+          <button type="submit" class="primary-btn">Solicitar materiais</button>
+          <p class="actions-note">Ao enviar, o sistema baixa o .txt e abre o WhatsApp do responsável.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
