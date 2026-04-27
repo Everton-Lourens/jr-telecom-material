@@ -3,52 +3,32 @@
 
 const COMPANY_NAME = 'JR TELECOM - CAMAÇARI';
 const RESPONSIBLE_NAME = 'Everton Lourenço';
-const WHATSAPP_NUMBER = '5511981768164'; // Formato internacional para wa.me
+const WHATSAPP_NUMBER = '5571996122630'; // Formato internacional para wa.me
 const MATERIALS = [
   {
-    id: 'cabo-rede',
-    name: 'Cabo de rede',
-    description: 'Patch de rede para ligações, manutenção e organização.'
+    id: 'bucha-acabamento',
+    name: 'Bucha de Acabamento',
+    description: 'Bucha para deixar o furo na parede menos aparente.'
   },
   {
-    id: 'rj45',
-    name: 'Conector RJ45',
-    description: 'Conector de 8 vias para terminação de cabo de rede.'
+    id: 'placa-jr',
+    name: 'Placa Jr Telecom',
+    description: 'Placa para identificaçãode drop nos postes.'
   },
   {
-    id: 'roteador',
-    name: 'Roteador',
-    description: 'Equipamento para distribuição de rede e conectividade.'
+    id: 'fixa-fio',
+    name: 'Fixa fio',
+    description: 'Fixa fio para prender o drop na casa dos clientes.'
   },
   {
-    id: 'fonte',
-    name: 'Fonte',
-    description: 'Fontes e adaptadores para alimentação de equipamentos.'
-  },
-  {
-    id: 'patch-cord',
-    name: 'Patch cord',
-    description: 'Cabo pronto para conexões rápidas em racks e pontos.'
-  },
-  {
-    id: 'switch',
-    name: 'Switch',
-    description: 'Equipamento de distribuição de portas de rede.'
-  },
-  {
-    id: 'bateria',
-    name: 'Bateria',
-    description: 'Baterias para nobreak, rádio ou equipamentos compatíveis.'
-  },
-  {
-    id: 'tomada',
-    name: 'Tomada',
+    id: 'conector-sc-apc',
+    name: 'Conector SC/APC',
     description: 'Tomadas e pontos elétricos de apoio à instalação.'
   },
   {
-    id: 'plug',
-    name: 'Plug',
-    description: 'Plugs e conectores para adaptações elétricas ou técnicas.'
+    id: 'bucha-parafuso',
+    name: 'Bucha e Parafuso',
+    description: 'Bucha e Parausos para fixar equipamentosna parede.'
   },
   {
     id: 'fita-isolante',
@@ -61,14 +41,9 @@ const MATERIALS = [
     description: 'Organização de cabos e fixação em instalações.'
   },
   {
-    id: 'organizacao-cabeamento',
-    name: 'Organização de cabeamento',
+    id: 'aspiral-macarrao',
+    name: 'Aspiral/Macarrão',
     description: 'Itens e materiais para organização de cabos.'
-  },
-  {
-    id: 'outros',
-    name: 'Outros itens técnicos',
-    description: 'Use para materiais não listados na estrutura fixa.'
   }
 ];
 
