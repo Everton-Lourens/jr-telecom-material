@@ -337,12 +337,13 @@ form.addEventListener('submit', (event) => {
 
   const message = buildWhatsAppMessage(data, selectedMaterials);
   const opened = openWhatsApp(message);
-
+/**
   if (opened) {
     showFeedback('success', `Solicitação gerada com sucesso. O arquivo .txt foi baixado e o WhatsApp foi aberto para envio.`);
   } else {
     showFeedback('info', `Não foi possível abrir automaticamente. Entre em contato com ${RESPONSIBLE_NAME}. O arquivo .txt já foi baixado.`);
   }
+  **/
 });
 
 searchInput.addEventListener('input', (event) => {
